@@ -15,14 +15,14 @@ function meuEscopo() {
     const altura = form.querySelector('.altura');
 
     pessoas.push({
-      nome: nome.nodeValue,
-      sobrenome: sobrenome.nodeValue,
-      peso = peso.nodeValue,
-      altura = altura.value
+      nome: nome.Value,
+      sobrenome: sobrenome.Value,
+      peso: peso.Value,
+      altura: altura.value
     });
 
-    console.log(pessos);
-    resultado.innerHTML += `<>`
+    console.log(pessoas);
+    resultado.innerHTML += `<p>${nome.value} ${sobrenome.value} ${peso.value} ${altura.Value}</p>`;
 
   }
   form.addEventListener('submit', recebeEventoForm);
