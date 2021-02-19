@@ -31,7 +31,6 @@ function formataData(){
 
   return `${dia}/${mes}/${ano}  ${hora}:${min}:${seg}`;
 
-
 }
 
 const data = new Date();
