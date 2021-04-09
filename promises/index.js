@@ -34,4 +34,23 @@ esperaAi('Conexao com o BD', rand(1, 3))
   .catch(e => {
     console.log('ERROR:', e);
   });
-  console.log('Isso aqui aparece antes de qualquer promise.')
+  console.log('Isso aqui aparece antes de qualquer promise.');
+
+  // Promise.all - Promise.race Promise.resolve Promise.reject
+
+  const promises = [
+    'primeiro valor',
+    esperaAi('Promise 1', 3000),
+    esperaAi('Promise 2', 500),
+    esperaAi('Promise 3', 1000),
+    'Outro valor'
+  ];
+
+  
+  Promise.all(promises)
+  .then(function(valor){
+    console.log(valor);
+  })
+  .catch(function(erro){
+    console.log(erro);
+  });
