@@ -1,3 +1,4 @@
 {
-  "liveServer.settings.multiRootWorkspaceName": "Curso-javascript"
+  "liveServer.settings.multiRootWorkspaceName": "Curso-javascript",
+  "git.ignoreLimitWarning": true
 }
